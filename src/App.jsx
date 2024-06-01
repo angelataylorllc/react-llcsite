@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import './App.css'
 import '../global.css'
 import logo from '/whitelogo.svg'
 import lightbulb from '/lightbulb.png';
 import trophy from '/trophy.png';
 import team from '/team.png';
-import abledesktop from '/desktop-size.png'
-import ablemobile from '/mobile-size.png'
-import bizdesktop from '/prototypebiz-desktop.png'
-import bizmobile from '/prototypebiz-mobile.png'
+import abledesktop from '/ablenft-desktop-ad.png'
+import ablemobile from '/ableNFTmint-phone.png'
+import bizdesktop from '/simple-desktop-ad.png'
+import bizmobile from '/simple-phone-ad.png'
 import aboutme from '/aboutme.png'
 import rightCurve from '/rightCurve.svg'
 
@@ -43,7 +41,7 @@ function App() {
 
       {/* Intro Text Section */}
 
-      <div className="flex flex-col bg-[url('.//public/striped-circle.svg')] 
+      <div className="flex flex-col bg-[url('/public/striped-circle.svg')] 
       bg-no-repeat sm:bg-left-top lg:bg-right-top bg-[length:636px_636px] py-10  overflow-visible ">
         
         <div className="flex font-bold text-2xl px-5 text-center w-5/6 mx-auto sm:text-5xl sm:w-11/12 sm:leading-relaxed sm:text-left md:pr-10 md:px-6 
@@ -61,7 +59,7 @@ function App() {
 
           <div className="flex text-gray-400 text-center text-xl px-6 sm:px-0 md:pr-18 lg:pt-9 lg:w-7/12 lg:mx-20 xl:text-2xl xl:text-left xl:p-0 xl:mx-auto 
           2xl:text-3xl">
-            <p>At Angela Taylor LLC, we're passionate about transforming ideas into digital reality. 
+            <p>At Angela Taylor LLC, we&apos;re passionate about transforming ideas into digital reality. 
               With expertise in website and mobile application development, we empower small businesses 
               to thrive in the digital landscape.</p>
           </div>
@@ -115,55 +113,79 @@ function App() {
 
       {/* Project Example Section */}
 
-      <h1 className="text-white text-3xl font-bold text-center py-6 lg:text-5xl xl:text-7xl xl:my-10">Portfolio</h1> 
+      <h1 className="text-white text-3xl font-bold text-center py-6 lg:text-4xl xl:text-6xl xl:my-4">Work</h1> 
 
       <div id="Portfolio" className="flex flex-col w-5/6 mx-auto">
 
-        <div className="flex flex-col border-fuchsia-900 border-2 m-4 py-6">
-          <div>
-            <h1 className="text-white text-2xl font-bold text-center py-6 lg:text-5xl">AbleNFTMint</h1> 
-          </div>
+        <div className="flex flex-col bg-zinc-700 m-4 py-6 rounded-xl">
        
-        <div className="flex ">
+          <div className="flex flex-col m-4 lg:flex-row lg:mt-16">
 
-        <div className=" lg:flex lg:flex-col m-2 mx-auto lg:px-10">
-              <h2 className="text-white text-lg font-bold text-center py-4 lg:py-8 lg:text-2xl">Mobile - 280px</h2>
-              <img className="border-l-indigo-900 border-2 w-72 pb-10" src={ablemobile} />
+          <div className="m-2 mx-auto 2xl:size-1/2">
+            <img className="my-auto rounded-lg md:px-8 lg:h-72 2xl:h-full " src={abledesktop} />
+          </div>
+
+          <div className="text-white text-sm leading-tight md:my-6 md:leading-snug  lg:my-0 lg:flex lg:flex-1 lg:flex-col">
+              <h1 className="text-xl sm:my-4 lg:text-2xl xl:text-3xl font-semibold my-2 lg:mb-6">AbleNFT Mint</h1>
+              <p className=' lg:leading-snug lg:text-lg xl:text-xl font-light mb-6'>AbleNFT Mint is an NFT minting platform designed to provide a seamless user experience for minting and managing NFTs. 
+                The site was designed collaboratively using Figma, and I took on the task of bringing the design to life using React and Tailwind CSS. 
+                My focus was on creating a responsive, mobile-first design to ensure the site looks great on all devices. Throughout the development process, 
+                I utilized modern development tools to achieve a polished, high-performance website.</p>
+              <h1 className='lg:text-2xl font-light mb-2'>DEVELOPMENT TOOLS</h1>
+              <ul className='list-disc list-inside lg:text-lg font-light mb-4'>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Node.js</li>
+              </ul>
+              <a  href='https://ablenftmint-react.netlify.app/' className='lg:text-lg font-light underline underline-offset-4'>View project → </a>
             </div>
 
-          <div className="invisible w-0 lg:w-full -mb-96  lg:-mb-0 lg:visible lg:flex lg:flex-1 lg:flex-col lg:px-10">
-              <h2 className="text-white text-lg font-bold text-center py-4 lg:py-8 lg:text-2xl">Desktop - 1920px</h2>
-              <img className="border-indigo-900 border-2 pb-10 mx-auto" src={abledesktop} />
+          </div>
+          <div className="flex ">
+
+            <div className="invisible w-0 lg:w-full -mb-96  lg:-mb-0 lg:visible lg:flex lg:flex-1 lg:flex-col lg:px-10">
+                <img className="my-10 mx-auto mr-10 h-60 rounded-lg lg:h-52" src={ablemobile} />
             </div>
-
-
+          </div>
 
         </div>
 
-        </div>
+        <div className="flex flex-col bg-zinc-700 m-4 py-6 rounded-xl my-20">
+       
+       <div className="flex flex-col m-4 lg:flex-row lg:mt-16">
 
-      <div className="flex flex-col border-fuchsia-900 border-2 m-4 py-6">
-        <div>
-            <h1 className="text-white text-2xl font-bold text-center py-6 lg:text-5xl">Collier Technologies</h1>
-        </div>
-     
-        <div className="flex ">
+       <div className=" m-2 mx-aut 2xl:size-1/2">
+         <img className="my-auto rounded-lg md:px-8 lg:h-72 2xl:h-full " src={bizdesktop} />
+       </div>
 
-        <div className=" lg:flex lg:flex-col m-2 mx-auto lg:px-10">
-              <h2 className="text-white text-lg font-bold text-center py-4 lg:py-8 lg:text-2xl">Mobile - 280px</h2>
-              <img className="border-l-indigo-900 border-2 w-72 pb-10" src={bizmobile} />
-            </div>
+       <div className="text-white text-sm leading-tight md:my-6 md:leading-snug  lg:my-0 lg:mr-10 lg:flex lg:flex-1 lg:flex-col">
+           <h1 className="text-lg sm:my-4 lg:text-2xl xl:text-3xl font-semibold my-2 lg:mb-6">Simple Business Ad</h1>
+           <p className=' lg:leading-snug lg:text-lg xl:text-xl font-light mb-6'>Simple Business Ad is a promotional website created to showcase web development skills, 
+           developed in collaboration with Collier Technologies. I was responsible for the entire design, which was then refined in Figma. 
+           The site is built with a mobile-first approach using React and Tailwind CSS, ensuring a sleek and responsive user experience across all devices. 
+           This project demonstrates my ability to deliver professional, high-quality websites for business promotion.</p>
+           <h1 className='lg:text-2xl font-light mb-2'>DEVELOPMENT TOOLS</h1>
+           <ul className='list-disc list-inside lg:text-lg font-light mb-4'>
+             <li>React</li>
+             <li>Tailwind CSS</li>
+             <li>Node.js</li>
+           </ul>
+           <a  href='https://simple.colliertech.org/' className='lg:text-lg font-light underline underline-offset-4'>View project → </a>
+         </div>
 
-          <div className="invisible w-0 lg:w-full -mb-96  lg:-mb-0 lg:visible lg:flex lg:flex-1 lg:flex-col lg:px-10">
-              <h2 className="text-white text-lg font-bold text-center py-4 lg:py-8 lg:text-2xl">Desktop - 1920px</h2>
-              <img className="border-l-indigo-900 border-2 pb-10 mx-auto" src={bizdesktop} />
-            </div>
+       </div>
+       <div className="flex ">
 
-        </div>
+         <div className="invisible w-0 lg:w-full -mb-96  lg:-mb-0 lg:visible lg:flex lg:flex-1 lg:flex-col lg:px-10">
+             <img className="my-10 mx-auto mr-10 rounded-lg lg:h-72" src={bizmobile} />
+         </div>
+       </div>
+
+     </div>
 
       </div>
 
-      </div>
+      {/* Contact Us Section */}
 
       <div className="flex flex-col mt-16 pb-16 lg:w-9/12 lg:mx-auto">
 
@@ -171,7 +193,7 @@ function App() {
         h-80 lg:h-96 ">
 
         <p className="text-gray-300 text-center text-base sm:text-lg pt-16 px-2 lg:pt-24 pb-4 lg:text-2xl 2xl:text-5xl">
-          Want to work with us? Let's talk</p>
+          Want to work with us? Let&apos;s talk</p>
 
         <h1 className="text-white font-bold text-lg px-2 sm:text-2xl text-center py-6 lg:text-3xl lg:pb-10 2xl:text-4xl">
           hello@angelataylorllc.com</h1>
@@ -199,7 +221,7 @@ function App() {
         </div>
 
         <div>
-          <p className="text-gray-400 mx-2 my-4 sm:h-9 sm:pl-6 lg:mx-4 xl:pl-0 xl:text-xl 2xl:mr-8 2xl:leading-relaxed">At Angela Taylor LLC, we're your dedicated digital 
+          <p className="text-gray-400 mx-2 my-4 sm:h-9 sm:pl-6 lg:mx-4 xl:pl-0 xl:text-xl 2xl:mr-8 2xl:leading-relaxed">At Angela Taylor LLC, we&apos;re your dedicated digital 
             partners. Our team is on a mission to empower small businesses through innovative websites and 
             mobile applications. With a focus on collaboration and tailored solutions, we turn your vision into 
             a digital reality. Our commitment is to provide not just services, but a personalized journey to success. 
@@ -208,8 +230,8 @@ function App() {
         
       </div>
         
-        <div className="flex flex-1 justify-center pb-10 m-8 sm:mt-36 lg:mx-0 lg:mt-8 2xl:mt-0">
-          <img className="resize lg:w-full xl:w-5/6 2xl:w-4/6 " src={aboutme} />
+        <div className="flex flex-1 justify-center pb-10 m-8 sm:mt-36 lg:mx-0 lg:mt-8 ">
+          <img className="opacity-80 resize lg:w-full xl:w-5/6 2xl:w-3/6" src={aboutme} />
         </div>
 
     </div>
