@@ -25,7 +25,7 @@ function App() {
                    
         <div>
           <ul className="flex text-white justify-evenly py-10 lg:gap-6 lg:mx-6 xl:gap-14 xl:mx-14 2xl:mr-60">
-              <div><a className="cursor-pointer text-xs sm:text-base md:text-lg lg:text-xl lg:px-3" href="#Portfolio">Portfolio</a></div>
+              <div><a className="cursor-pointer text-xs sm:text-base md:text-lg lg:text-xl lg:px-3" href="#Portfolio">Work</a></div>
               <div><a className="cursor-pointer text-xs sm:text-base md:text-lg lg:text-xl lg:px-3" href="#AboutUs">About</a></div>
               <div><a className="cursor-pointer text-xs sm:text-base md:text-lg lg:text-xl lg:px-3" 
               href="https://www.linkedin.com/in/angela-taylor-78430538/">LinkedIn</a></div>
@@ -41,7 +41,7 @@ function App() {
 
       {/* Intro Text Section */}
 
-      <div className="flex flex-col bg-[url('/public/striped-circle.svg')] 
+      <div className="flex flex-col bg-[url('/striped-circle.svg')] 
       bg-no-repeat sm:bg-left-top lg:bg-right-top bg-[length:636px_636px] py-10  overflow-visible ">
         
         <div className="flex font-bold text-2xl px-5 text-center w-5/6 mx-auto sm:text-5xl sm:w-11/12 sm:leading-relaxed sm:text-left md:pr-10 md:px-6 
